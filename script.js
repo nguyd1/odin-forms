@@ -1,9 +1,9 @@
 const btn=document.querySelector("button");
 const div=document.querySelector("div");
+const inputs=document.querySelectorAll("input");
 
 btn.addEventListener("click",()=>{
     let isValid=true;
-    const inputs=document.querySelectorAll("input");
     inputs.forEach(input=>{
         if(!input.checkValidity()){
             isValid=false;
